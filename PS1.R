@@ -69,3 +69,46 @@ t.test(df3$Ash, df5$Ash, var.equal = TRUE)
 #According the t test results of class 1 and 3, 
 #since the p-value=0.6499 which is greater than 0.01, the null hypothesis is not rejected, 
 #the difference between the means of level of ash in class 1 and 3 is not statistically significant.
+
+
+#Problem 2
+#a)
+isPerfectPower<-function(number,power) {
+  if (number<1||power<2) {
+    isPerfect<-FALSE
+    return(list(isPerfect=isPerfect,root=NA))
+  }
+  
+  root<-round(number^(1/power)) #calculate the root of the number for the given power 
+  #and rounds it to the nearest integer. 
+  #This root is then used to check if the number is a perfect power when raised to the specified power.
+  
+  if (root^power==number) {
+    isPerfect<-TRUE
+    return(list(isPerfect=isPerfect,root=root))
+  } else {
+    isPerfect<-FALSE
+    return(list(isPerfect=isPerfect,root=root))
+  }
+}
+
+isPerfectPower(16,2)
+isPerfectPower(125,3)
+
+#b)
+findRootPower<-function(number) {
+  for (power in 2:50) {  # This range of powers to check can be adjusted.
+    result <- isPerfectPower(number,power)
+    if (result[[1]]) {
+      return(paste(number,"=",result[[2]],"^",power))
+    }
+  }
+  return("Input is not a perfect power")
+}
+
+findRootPower(27)
+findRootPower(13060694016)
+findRootPower(7776)
+findRootPower(170859375)
+findRootPower(58247422)
+findRootPower(94143178827)
