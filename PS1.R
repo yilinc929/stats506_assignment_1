@@ -57,3 +57,15 @@ t.test(df3$Ash, df4$Ash, var.equal = TRUE)
 t.test(df4$Ash, df5$Ash, var.equal = TRUE)
 #t test on level of ashes of class 1 and class 3
 t.test(df3$Ash, df5$Ash, var.equal = TRUE)
+#Choosing a significant level of 0.01. 
+#According the t test results of class 1 and 2, 
+#since the p-value=3.493e-05 which is smaller than 0.01, the null hypothesis is rejected, 
+#the difference between the means of level of ash in class 1 and 2 is statistically significant.
+
+#According the t test results of class 2 and 3, 
+#since the p-value=0.0002293 which is smaller than 0.01, the null hypothesis is rejected, 
+#the difference between the means of level of ash in class 2 and 3 is statistically significant.
+
+#According the t test results of class 1 and 3, 
+#since the p-value=0.6499 which is greater than 0.01, the null hypothesis is not rejected, 
+#the difference between the means of level of ash in class 1 and 3 is not statistically significant.
