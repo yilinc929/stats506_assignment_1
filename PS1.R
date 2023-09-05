@@ -218,3 +218,10 @@ deal_poker_round(7)  # Simulate a round of 5-card stud poker with 7 players
 deal_poker_round(10) # Simulate a round of 5-card stud poker with 10 players
 #The code runs without errors for a variety on inputs.
 
+#c) The line-by-line explanation are displayed in comments made after each line in the code in part a. 
+
+#d)
+#1.Are the inputs and outputs as described above?
+#2.Are the hands valid (e.g. real cards, no duplicates, right number)?
+#3.Are the names of the hands correct? (See here if you’re not familiar with poker hands.)
+#4.Does it ensure no duplicates in cards across hands? What happens if you ask for more than 10 hands to be dealt (as there are only 52 cards in a standard deck)?
