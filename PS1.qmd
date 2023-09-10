@@ -31,7 +31,7 @@ wine_count<-df %>% group_by(class) %>%
 wine_count
 ```
 
-The number of wines within each class is correct as reported in \"wine.names\".
+The number of wines within each class is correct as reported in "wine.names".
 
 ### part c)
 
@@ -97,7 +97,7 @@ t.test(df4$Ash, df5$Ash, var.equal = TRUE)
 t.test(df3$Ash, df5$Ash, var.equal = TRUE)
 ```
 
-Choosing a significant level of 0.01. 
+Choosing a significant level of 0.01.
 
 According the t test results of class 1 and 2, since the p-value=3.493e-05 which is smaller than 0.01, the null hypothesis is rejected, the difference between the means of level of ash in class 1 and 2 is statistically significant.
 
